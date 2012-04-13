@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>iomeme Chrome Extension</title>
+    <style>
+      body {
+        min-width:250px;
+        overflow-x:hidden;
+        font-family: Helvetica, Arial, Sans-serif;
+      }
+      input {
+        width: 100%;
+      }
+      h1 {
+        font-size: 16px;
+      }
+      a {
+        font-size: 10px;
+        color:#444444;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>iomeme</h1>
+    <select id="meme" name="meme" onchange="updateURL();">
+      <option value="acf">annoying childhood friend</option>
+      <option value="ad">advice dog</option>
+      <option value="afg">annoying facebook girl</option>
+      <option value="ag">advice god</option>
+      <option value="ajc">anti joke chicken</option>
+      <option value="aso">art student owl</option>
+      <option value="bac">bad advice cat</option>
+      <option value="bc">business cat</option>
+      <option value="bd">butthurt dweller</option>
+      <option value="bg">bear grylls</option>
+      <option value="blb">bad luck brian</option>
+      <option value="bo">bill oreilly</option>
+      <option value="byxic">brace yourselves x is coming</option>
+      <option value="cc">chemistry cat</option>
+      <option value="ccw">creepy condescending wonka</option>
+      <option value="cf">college freshman</option>
+      <option value="cgpm">crazy girlfriend praying mantis</option>
+      <option value="ck">conspiracy keanu</option>
+      <option value="cw">courage wolf</option>
+      <option value="dd">depression dog</option>
+      <option value="dr">downvoting roman</option>
+      <option value="ds">dwight schrute</option>
+      <option value="dsm">dating site murderer</option>
+      <option value="fa">forever alone</option>
+      <option value="fbf">foul bachelor frog</option>
+      <option value="fbtf">foul bachelorette frog</option>
+      <option value="ff">futurama fry</option>
+      <option value="ftsg">family tech support guy</option>
+      <option value="fwp">first world problems</option>
+      <option value="fz">futurama zoidberg</option>
+      <option value="gfti">grandma finds the internet</option>
+      <option value="ggg">good guy greg</option>
+      <option value="h">hawkward</option>
+      <option value="heaf">high expectations asian father</option>
+      <option value="hk">hipster kitty</option>
+      <option value="htd">helpful tyler durden</option>
+      <option value="iw">insanity wolf</option>
+      <option value="jd">joseph ducreux</option>
+      <option value="kk">karate kyle</option>
+      <option value="lpc">lame pun coon</option>
+      <option value="moeg">musically oblivious 8th grader</option>
+      <option value="nn">net noob</option>
+      <option value="odns">one does not simply</option>
+      <option value="og">office grizzly</option>
+      <option value="omm">ordinary muslim man</option>
+      <option value="p">pedobear</option>
+      <option value="pcb">ptsd clarinet boy</option>
+      <option value="pisep">put it somewhere else patrick</option>
+      <option value="plp">pickup line panda</option>
+      <option value="pp">paranoid parrot</option>
+      <option value="pr">philosoraptor</option>
+      <option value="rpg">ridiculously photogenic guy</option>
+      <option value="rr">redneck randal</option>
+      <option value="rrv">rich raven</option>
+      <option value="rst">rasta science teacher</option>
+      <option value="rw">redditors wife</option>
+      <option value="saap">socially awkward awesome penguin</option>
+      <option value="sap">socially awkward penguin</option>
+      <option value="sawp">socially awesome penguin</option>
+      <option value="sbm">successful black man</option>
+      <option value="sd">stoner dog</option>
+      <option value="sg">scumbag girl</option>
+      <option value="sk">success kid</option>
+      <option value="sor">sexually oblivious rhino</option>
+      <option value="sp">slowpoke</option>
+      <option value="ss">scumbag steve</option>
+      <option value="ssm">sheltering suburban mom</option>
+      <option value="tdh">too damn high</option>
+      <option value="tid">tech impaired duck</option>
+      <option value="tmicitw">the most interesting cat in the world</option>
+      <option value="tmimitw">the most interesting man in the world</option>
+      <option value="uht">unhelpful highschool teacher</option>
+      <option value="xaty">x all the y</option>
+      <option value="yun">y u no</option>
+    </select>
+    <input id="line1" type="text" name="line1" onkeyup="updateURL();"/>
+    <input id="line2" type="text" name="line2" onkeyup="updateURL();"/>
+    <input id="url" type="text" name="url" readonly="readonly"/>
+    <a href="http://www.iome.me">http://www.iome.me</a>
+    <script src="popup.js"></script>
+  </body>
+</html>

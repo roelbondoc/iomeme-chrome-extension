@@ -1,0 +1,13 @@
+{
+  "name": "iomeme Chrome Extension",
+  "version": "1.0",
+  "manifest_version": 21,
+  "description": "Chrome Extension that uses the iomeme API.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://iome.me/"
+  ]
+}
